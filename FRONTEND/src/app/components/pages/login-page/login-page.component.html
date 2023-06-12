@@ -1,0 +1,94 @@
+<!-- <p>login-page works!</p>
+<div class="container">
+  <div class="details">
+    <app-title title="Login"></app-title>
+
+    <form [formGroup]="loginForm" (ngSubmit)="submit()">
+
+    <text-input
+    [control]="fc.email"
+    [showErrorsWhen]="isSubmitted"
+    type="email"
+    label="Email">
+  </text-input>
+
+  <text-input
+  [control]="fc.password"
+  [showErrorsWhen]="isSubmitted"
+  type="password"
+  label="Password">
+</text-input>
+
+    <default-button text="Login"></default-button>
+    <div class="register">
+      New user? &nbsp;
+      <a routerLink="/register" [queryParams]="{returnUrl : returnUrl}">
+        Register here
+      </a>
+    </div>
+    </form>
+  </div>
+</div> -->
+
+<!-- <div class="container">
+  <div class="details">
+    <app-title title="Login"></app-title>
+
+    <form [formGroup]="loginForm">
+      <div class="input-container">
+     <input-container label="Email">
+     <div>
+      <input type="email" formControlName="email" placeholder="email" >
+  <input-validation
+  [control]="fc"
+  [showErrorsWhen]="isSubmitted">
+</input-validation>
+    </div>
+    </input-container>
+      </div>
+      <div class="input-container">
+        <label for="password">Password</label>
+        <div>
+          <input type="password" formControlName="password" placeholder="Password" >
+          <div class="error-list" *ngIf="loginForm.get('password')?.errors && isSubmitted">
+            <div *ngIf="loginForm.get('password')?.errors?.required">Should not be empty</div>
+          </div>
+        </div>
+      </div>
+      <button style="width: 87px" type="submit" (click)="submit()">Login</button>
+    </form>
+
+  </div>
+</div> -->
+
+<div class="container">
+  <div class="details">
+    <app-title title="Login"></app-title>
+
+    <form [formGroup]="loginForm" (ngSubmit)="submit()">
+
+    <text-input
+    [control]="fc.email"
+    [showErrorsWhen]="isSubmitted"
+    type="email"
+    label="Email">
+  </text-input>
+
+  <text-input
+  [control]="fc.password"
+  [showErrorsWhen]="isSubmitted"
+  type="password"
+  label="Password">
+</text-input>
+
+      <default-button text="Login"></default-button>
+
+    <div class="register">
+      New user? &nbsp;
+      <a routerLink="/register" [queryParams]="{returnUrl : returnUrl}">
+        Register here
+      </a>
+    </div>
+    </form>
+  </div>
+</div>
