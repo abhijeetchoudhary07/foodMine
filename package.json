@@ -1,0 +1,12 @@
+{
+    "name": "foodmine-course",
+    "version": "1.0.0",
+    "engines": {
+        "node": ">=18 <19"
+    },
+    "scripts": {
+        "start": "cd BACKEND/built && node server.js",
+        "prebuild": "cd BACKEND && npm run build",
+        "build": "cd FRONTEND && npm run build"
+    }
+}
