@@ -6,7 +6,7 @@
     },
     "scripts": {
         "start": "cd BACKEND/built && node server.js",
-        "prebuild": "cd BACKEND && npm run build",
+        "prebuild": "cd BACKEND && npm run start",
         "build": "cd FRONTEND && npm run build"
     }
 }
